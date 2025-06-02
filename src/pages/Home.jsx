@@ -9,7 +9,7 @@ export function Home() {
   const featureCardRef = useRef(null);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#e0f2f1] to-[#ffffff]">
+    <div className="min-h-screen bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a]">
       <Hero featureCardRef={featureCardRef} />
       <Hero2 />
 

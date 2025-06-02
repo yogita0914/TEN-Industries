@@ -3,128 +3,69 @@ import { motion } from "framer-motion";
 
 export function Hero4() {
   return (
-    <section className="py-16 bg-gradient-to-b from-gray-100 to-gray-50">
+    <section className="py-20 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="bg-white rounded-2xl shadow-xl p-8 md:p-12"
+          transition={{ duration: 0.6 }}
+          className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl shadow-2xl p-10 md:p-14"
         >
-          <div className="text-center mb-10">
-            <h2 className="text-4xl font-extrabold text-gray-900 mb-2">
-              Transformation Journeys at{" "}
-              <span className="text-[#005f73]">TEN-Industries</span>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4 drop-shadow-md">
+              Impact Stories at{" "}
+              <span className="text-[#3a86ff]">TEN-Industries</span>
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Explore real-world success stories from industry leaders and
-              professionals who evolved with TEN-Industries through innovation,
-              strategy, and operational excellence.
+            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+              Discover how industry pioneers transformed operations, scaled
+              innovation, and led future-ready strategies with TEN-Industries'
+              support.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* 1 */}
-            <motion.div
-              whileHover={{
-                scale: 1.03,
-                boxShadow: "0 10px 25px rgba(59, 130, 246, 0.15)",
-              }}
-              className="bg-gradient-to-b from-[#e0f2f1] to-[#ffffff] p-6 rounded-lg border border-blue-100"
-            >
-              <p className="text-gray-700 italic mb-4">
-                "With <strong>ProMach Engineering</strong>, TEN-Industries
-                helped us refine our manufacturing workflows and increase
-                productivity by 30%."
-              </p>
-              <p className="font-semibold text-[#005f73]">- Prince</p>
-              <p className="text-sm text-gray-500">Chief of Staff</p>
-            </motion.div>
-
-            {/* 2 */}
-            <motion.div
-              whileHover={{
-                scale: 1.03,
-                boxShadow: "0 10px 25px rgba(59, 130, 246, 0.15)",
-              }}
-              className="bg-gradient-to-b from-[#e0f2f1] to-[#ffffff] p-6 rounded-lg border border-blue-100"
-            >
-              <p className="text-gray-700 italic mb-4">
-                "Our journey with <strong>DataSys Analytics</strong> via
-                TEN-Industries elevated our data infrastructure and boosted
-                strategic decision-making."
-              </p>
-              <p className="font-semibold text-[#005f73]">- Himanshu</p>
-              <p className="text-sm text-gray-500">Chief of Staff</p>
-            </motion.div>
-
-            {/* 3 */}
-            <motion.div
-              whileHover={{
-                scale: 1.03,
-                boxShadow: "0 10px 25px rgba(59, 130, 246, 0.15)",
-              }}
-              className="bg-gradient-to-b from-[#e0f2f1] to-[#ffffff] p-6 rounded-lg border border-blue-100"
-            >
-              <p className="text-gray-700 italic mb-4">
-                "Partnering with <strong>HealthTech Systems</strong>, TEN
-                streamlined our project management pipelines and scaled clinical
-                impact."
-              </p>
-              <p className="font-semibold text-[#005f73]">- Mounika</p>
-              <p className="text-sm text-gray-500">Chief of Staff</p>
-            </motion.div>
-
-            {/* 4 */}
-            <motion.div
-              whileHover={{
-                scale: 1.03,
-                boxShadow: "0 10px 25px rgba(59, 130, 246, 0.15)",
-              }}
-              className="bg-gradient-to-b from-[#e0f2f1] to-[#ffffff] p-6 rounded-lg border border-blue-100"
-            >
-              <p className="text-gray-700 italic mb-4">
-                "At <strong>AutoNova Robotics</strong>, TEN’s mentorship
-                equipped me to lead cross-functional teams toward automation
-                excellence."
-              </p>
-              <p className="font-semibold text-[#005f73]">- Anurag</p>
-              <p className="text-sm text-gray-500">Chief of Staff</p>
-            </motion.div>
-
-            {/* 5 */}
-            <motion.div
-              whileHover={{
-                scale: 1.03,
-                boxShadow: "0 10px 25px rgba(59, 130, 246, 0.15)",
-              }}
-              className="bg-gradient-to-b from-[#e0f2f1] to-[#ffffff] p-6 rounded-lg border border-blue-100"
-            >
-              <p className="text-gray-700 italic mb-4">
-                "TEN-Industries enabled <strong>HRFlow Consulting</strong> to
-                implement future-ready HR practices and build leadership
-                pipelines."
-              </p>
-              <p className="font-semibold text-[#005f73]">- Yogita</p>
-              <p className="text-sm text-gray-500">Chief of Staff</p>
-            </motion.div>
-
-            {/* 6 */}
-            <motion.div
-              whileHover={{
-                scale: 1.03,
-                boxShadow: "0 10px 25px rgba(59, 130, 246, 0.15)",
-              }}
-              className="bg-gradient-to-b from-[#e0f2f1] to-[#ffffff] p-6 rounded-lg border border-blue-100"
-            >
-              <p className="text-gray-700 italic mb-4">
-                "Thanks to TEN-Industries and{" "}
-                <strong>SkillForge Solutions</strong>, I transitioned into a
-                leadership role while scaling learning and development impact."
-              </p>
-              <p className="font-semibold text-[#005f73]">- Jay</p>
-              <p className="text-sm text-gray-500">Chief of Staff</p>
-            </motion.div>
+            {[
+              {
+                quote:
+                    "With TEN Education, TEN-Industries helped us refine workflows and boost productivity by 30%.",
+                name: "Prince",
+              },
+              {
+                quote:
+                    "Our journey with TEN ART via TEN-Industries elevated our data infrastructure.",
+                name: "Himanshu",
+              },
+              {
+                quote:
+                    "Partnering with TEN Health, TEN streamlined project pipelines and scaled impact.",
+                name: "Mounika",
+              },
+              {
+                quote:
+                    "At TEN AI, TEN’s mentorship helped me lead automation teams efficiently.",
+                name: "Anurag",
+              },
+              {
+                quote:
+                  "TEN-Industries enabled HR Consulting to implement future-ready HR practices.",
+                name: "Yogita",
+              },
+              {
+                quote:
+                  "Thanks to TEN-Industries and TEN Blockchain, I stepped into a leadership role.",
+                name: "Jay",
+              },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                whileHover={{ scale: 1.03 }}
+                className="bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800 border-gray-600/30 shadow-md hover:shadow-gray-600 p-6 border border-white/10 shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <p className="text-gray-200 italic mb-4">“{item.quote}”</p>
+                <p className="font-semibold text-cyan-400">- {item.name}</p>
+                <p className="text-sm text-gray-300">Chief of Staff</p>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
       </div>

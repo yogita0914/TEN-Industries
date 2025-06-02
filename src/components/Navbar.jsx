@@ -9,7 +9,7 @@ export function Navbar({ menuItems = [] }) {
   const tenMentor = menuItems.find((item) => item.title === "Ten Mentor");
 
   return (
-    <nav className="bg-gradient-to-r from-[#005f73] to-[#0a9396] text-white  shadow-lg sticky top-0 z-50">
+    <nav className="backdrop-blur-lg bg-[#0f172a]/80 text-white border-b border-[#334155]/40 shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-32">
         <div className="flex justify-between items-center h-20">
           <motion.div
@@ -34,12 +34,6 @@ export function Navbar({ menuItems = [] }) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <Link
-                to="/services"
-                className="text-sm sm:text-base font-medium text-white hover:text-blue-400 transition duration-300"
-              >
-                Services
-              </Link>
               <Link
                 to="/about"
                 className="text-sm sm:text-base font-medium text-white hover:text-blue-400 transition duration-300"

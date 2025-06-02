@@ -16,35 +16,34 @@ export function Hero({ featureCardRef }) {
   const navigate = useNavigate();
 
   return (
-    <header className="bg-gradient-to-b from-gray-100 via-[#e0f2f1] to-[#ffffff] text-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+    <header className="bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white min-h-screen flex items-center">
+      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 py-24 text-center backdrop-blur-md bg-white/5 rounded-xl shadow-xl border border-white/10">
         <motion.h1
-          className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight"
+          className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          Driving <span className="text-[#005f73]">Industrial Growth</span>,
-          <br /> Empowering{" "}
-          <span className="text-[#0a9396]">Innovative Solutions</span>
+          Driving <span className="text-[#38bdf8] drop-shadow">Industrial Growth</span>,<br />
+          Empowering <span className="text-[#22d3ee] drop-shadow">Innovative Solutions</span>
         </motion.h1>
 
         <motion.p
-          className="text-xl mt-6 max-w-3xl mx-auto text-gray-700"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          TEN-Industries bridges enterprises and innovation — enabling
-          industries to scale smarter with advanced technologies, partnerships,
-          and tailored business solutions.
-        </motion.p>
-
-        <motion.p
-          className="text-lg mt-4 max-w-2xl mx-auto text-gray-600"
+          className="text-lg sm:text-xl mt-6 max-w-3xl mx-auto text-gray-300"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
+        >
+          TEN-Industries bridges enterprises and innovation — enabling industries
+          to scale smarter with advanced technologies, partnerships, and tailored
+          business solutions.
+        </motion.p>
+
+        <motion.p
+          className="text-base sm:text-lg mt-4 max-w-2xl mx-auto text-gray-400"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
         >
           We provide industrial acceleration programs, expert consulting,
           strategic B2B connections, and access to capital and manufacturing
@@ -52,12 +51,12 @@ export function Hero({ featureCardRef }) {
         </motion.p>
 
         <motion.button
-          className="mt-10 bg-gradient-to-r from-[#005f73] to-[#0a9396] text-white px-8 py-3 cursor-pointer rounded-full font-semibold text-lg shadow-md hover:bg-[#00787b] transition duration-300"
+          className="mt-10 px-10 py-3 rounded-full font-semibold text-lg bg-gradient-to-r from-cyan-500 to-blue-600 shadow-lg hover:shadow-xl hover:from-cyan-400 hover:to-blue-500 transition duration-300 text-white ring-1 ring-cyan-400/50 backdrop-blur"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => navigate("/opportunities")}
         >
-          Discover Industrial Solutions
+          🚀 Discover Industrial Solutions
         </motion.button>
       </div>
     </header>
